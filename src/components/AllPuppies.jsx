@@ -4,13 +4,14 @@ const AllPuppies = (props)=>{
     const myPuppies = props.puppyData
 console.log(myPuppies)
     return (
-        <div>{myPuppies.length ?
+        <div className="puppy">{myPuppies.length ?
         myPuppies.map(()=>{
-            <div>
+            return(
+            <div key={`puppy-${puppy.id}`}>
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
+            </div>)
         })
         :   <div>Loading the cutest Puppies...</div>
         }</div>
