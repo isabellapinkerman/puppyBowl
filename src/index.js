@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from "react-dom/client"
-import {Main} from './components'
+import {Main, SeeDetails} from './components'
 import {
     createBrowserRouter,
     createRoutesFromElements,
@@ -13,6 +13,7 @@ const root = ReactDOM.createRoot(container)
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<Main />}>
+            <Route path=":userId" element={<SeeDetails />}> </Route>
         </Route>
     )
 )
