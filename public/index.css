@@ -16,6 +16,10 @@ body {
   align-items: center;
 }
 
+#SearchBar{
+  display: flex;
+}
+
 .puppy{
   border: black 2px solid;
   padding: 5px;

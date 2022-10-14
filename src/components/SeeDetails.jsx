@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link, useParams} from 'react-router-dom';
 
-const PuppyDetails = (props) => {
+const SeeDetails = (props) => {
     const {id}= useParams()
     const [puppy, setPuppy] = useState({})
     console.log(props)
@@ -19,11 +19,10 @@ const PuppyDetails = (props) => {
         getPuppy()
     },[])
 return(
-<div> 
-    {'This is your Puppy Details component'}
+<div route="SeeDetails"> 
     {/* <SinglePuppy puppy={puppy} /> */}
-    {/* <Link to='/allPuppies'>Go Back</Link>
-    <div>Team Members
+    <Link to='/AllPuppies'>Go Back</Link>
+    {/* <div>Team Members
         {puppy.team ? 
         puppy.team.players.map((teammate)=>{
             return <SinglePuppy puppy={teammate} />
@@ -34,4 +33,4 @@ return(
 )
 }
 
-export default PuppyDetails;
+export default SeeDetails;

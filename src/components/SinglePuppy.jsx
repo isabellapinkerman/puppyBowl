@@ -1,5 +1,5 @@
 import React from 'react'
-import PuppyDetails from './PuppyDetails'
+import SeeDetails from './SeeDetails'
 
 const SinglePuppy = (props) => {
 const puppy=props.element
@@ -10,7 +10,7 @@ return (
                 <div>{puppy.id}</div>
                 <div>{puppy.breed}</div>
                 <div>{puppy.status}</div>
-                <PuppyDetails />
+                <SeeDetails />
             </div>
 )}
 

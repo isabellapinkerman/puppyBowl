@@ -1,9 +1,13 @@
 import React from 'react'
 
 const SearchBar = ()=> {
-
+    // const [searchInput, setSearchInput] = useState('');
     return(
-        <div></div>
+        <div id="SearchBar">
+        <p>{'Name:'}</p>
+        <p>{'Breed:'}</p>
+        <p>{'SUBMIT'}</p>
+        </div>
     )
 }
 
