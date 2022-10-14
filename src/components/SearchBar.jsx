@@ -5,8 +5,11 @@ const SearchBar = ()=> {
     return(
         <div id="SearchBar">
         <p>{'Name:'}</p>
+        <input></input>
         <p>{'Breed:'}</p>
-        <p>{'SUBMIT'}</p>
+        <input></input>
+        <button>{'SUBMIT'}</button>
+        
         </div>
     )
 }

@@ -12,8 +12,9 @@ const root = ReactDOM.createRoot(container)
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<Main />}>
-            <Route path=":userId" element={<SeeDetails />}> </Route>
+        <Route path="/" >
+            <Route path="" element={<Main />}> </Route>
+            <Route path=':id' element={<SeeDetails />}></Route>
         </Route>
     )
 )

@@ -11,7 +11,7 @@ return (
                 <div>{puppy.id}</div>
                 <img src={puppy.imageUrl}></img>
                 <div>{puppy.status}</div>
-                <Link to={puppy.id}>See Details</Link>
+                <Link to={`${puppy.id}`}>See Details</Link>
             </div>
 )}
 
