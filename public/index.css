@@ -23,6 +23,7 @@ body {
 .puppy{
   border: black 2px solid;
   padding: 5px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -31,4 +32,16 @@ body {
   background-color: white;
   padding: 5px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+img{
+  height: 350px
+}
+
+#seeDetails{
+  border: black solid 5px;
+  width: 250px;
+
 }

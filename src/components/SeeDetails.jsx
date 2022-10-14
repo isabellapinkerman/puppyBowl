@@ -4,7 +4,7 @@ import {Link, useParams} from 'react-router-dom';
 const SeeDetails = (props) => {
     const {id}= useParams()
     const [puppy, setPuppy] = useState({})
-    console.log(props)
+    console.log(puppy)
     useEffect(()=>{
         async function getPuppy(){
             try {
@@ -19,14 +19,12 @@ const SeeDetails = (props) => {
         getPuppy()
     },[])
 return(
-<div route='SeeDetails'> See Details
-    {/* <div>Team Members
-        {puppy.team ? 
-        puppy.team.players.map((teammate)=>{
-            return <SinglePuppy puppy={teammate} />
-        })
-        : <div>This Puppy Doesn't have a team yet</div>}
-    </div> */}
+<div id='seeDetails'route='SeeDetails'>{`See Details of ${puppy.name}`}
+    <div>{puppy.name}</div>
+     <div>{puppy.id}</div>
+     <img src={puppy.imageUrl}></img>
+      <div>{puppy.status}</div>
+      <Link to='./AllPuppies'>Go Back</Link>
 </div>
 )
 }

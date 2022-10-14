@@ -8,7 +8,8 @@ const AllPuppies = (props)=>{
             {myPuppies.length ?
                 myPuppies.map((element, index)=>{
             return(
-           <SinglePuppy element= {element} key={`allPuppies:${index}`}/> )
+           <SinglePuppy element= {element} key={`allPuppies:${index}`}/>
+            )
         })
         :   <div>Loading the cutest Puppies...</div>
         }</div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from "react-dom/client"
-import {Main, SeeDetails} from './components'
+import {AllPuppies, Main, SeeDetails} from './components'
 import {
     createBrowserRouter,
     createRoutesFromElements,
@@ -15,6 +15,7 @@ const router = createBrowserRouter(
         <Route path="/" >
             <Route path="" element={<Main />}> </Route>
             <Route path=':id' element={<SeeDetails />}></Route>
+            <Route path='allPuppies' element={<AllPuppies />}></Route>
         </Route>
     )
 )
