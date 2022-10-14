@@ -19,7 +19,7 @@ const SeeDetails = (props) => {
         getPuppy()
     },[])
 return(
-<div id='seeDetails'route='SeeDetails'>{`See Details of ${puppy.name}`}
+<div id='seeDetails' route='SeeDetails'>{`See Details of ${puppy.name}`}
     <div>{puppy.name}</div>
      <div>{puppy.id}</div>
      <img src={puppy.imageUrl}></img>
