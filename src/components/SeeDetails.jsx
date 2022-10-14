@@ -20,15 +20,15 @@ const SeeDetails = (props) => {
     },[])
 return(
 <div route="SeeDetails"> 
-    {/* <SinglePuppy puppy={puppy} /> */}
+    <SinglePuppy puppy={puppy} />
     <Link to='/AllPuppies'>Go Back</Link>
-    {/* <div>Team Members
+    <div>Team Members
         {puppy.team ? 
         puppy.team.players.map((teammate)=>{
             return <SinglePuppy puppy={teammate} />
         })
         : <div>This Puppy Doesn't have a team yet</div>}
-    </div> */}
+    </div>
 </div>
 )
 }
