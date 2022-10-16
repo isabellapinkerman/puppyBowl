@@ -4,7 +4,6 @@ import {Link, useParams} from 'react-router-dom';
 const SeeDetails = (props) => {
     const {id}= useParams()
     const [puppy, setPuppy] = useState({})
-    console.log(puppy)
     useEffect(()=>{
         async function getPuppy(){
             try {
@@ -19,11 +18,13 @@ const SeeDetails = (props) => {
         getPuppy()
     },[])
 return(
-<div id='seeDetails' route='SeeDetails'>{`See Details of ${puppy.name}`}
+<div class='puppy' id='seeDetails' route='SeeDetails'>
     <div>{puppy.name}</div>
      <div>{puppy.id}</div>
-     <img src={puppy.imageUrl}></img>
+     <img class='puppyUrl' src={puppy.imageUrl}></img>
+      <div>{puppy.breed}</div>
       <div>{puppy.status}</div>
+      <div>{`team ${puppy.teamId}`}</div>
       <Link to='./AllPuppies'>Go Back</Link>
 </div>
 )

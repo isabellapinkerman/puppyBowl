@@ -13,7 +13,7 @@ body {
   background-color: purple;
   color: white;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 #SearchBar{
@@ -45,14 +45,18 @@ body {
 }
 
 img{ 
-  height: 200px;
+  height: 250px;
 }
 
 #seeDetails{
   
-  border-radius: 25px;
-  width: 250px;
+display: flex;
+align-items: center;
+border: solid black 3px;
+
 
 }
+
+
 
 
